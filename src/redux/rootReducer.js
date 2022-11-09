@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT, CHANGE_THEME} from "./types";
+import {INCREMENT, DECREMENT, CHANGE_THEME, TO_ZERO} from "./types";
 import {combineReducers} from "redux";
 
 function counterReducer(state = 0, action) {
@@ -6,6 +6,8 @@ function counterReducer(state = 0, action) {
         return state + 1
     }else if (action.type === DECREMENT) {
         return state - 1
+    }else if (action.type === TO_ZERO) {
+        return state = 0
     }
 
     return state

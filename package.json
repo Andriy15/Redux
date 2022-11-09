@@ -20,6 +20,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "@redux-devtools/extension": "^3.2.3",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2"
   }
